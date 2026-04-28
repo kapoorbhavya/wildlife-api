@@ -6,7 +6,7 @@ opencv-python-headless==4.9.0.80
 ultralytics==8.2.0
 timm==0.9.16
 albumentations==1.4.3
-numpy==1.26.4
+numpy<2.0.0
 aiofiles==23.2.1
 python-dotenv==1.0.1
 gdown==5.1.0
