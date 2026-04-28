@@ -7,15 +7,15 @@ RUN apt-get update && apt-get install -y \
     libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
+RUN pip install --no-cache-dir "numpy==1.26.4"
+
 COPY requirements.txt .
 
-# Install CPU-only PyTorch first (saves ~1.5 GB vs default)
 RUN pip install --no-cache-dir \
     torch==2.2.0+cpu \
     torchvision==0.17.0+cpu \
     --index-url https://download.pytorch.org/whl/cpu
 
-# Install remaining packages
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install --no-cache-dir gdown
 
