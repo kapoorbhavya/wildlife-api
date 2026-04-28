@@ -705,7 +705,19 @@ async def analyze_video(
     finally:
         if tmp_path and os.path.exists(tmp_path):
             os.unlink(tmp_path)
+@app.get("/test-models")
+async def test_models():
+    """Test if models load without crashing"""
+    import psutil
+    process = psutil.Process()
+    mem = process.memory_info().rss / 1e6
 
+    return {
+        "ram_used_mb": round(mem, 1),
+        "yolo_loaded": detector is not None,
+        "efficientnet_loaded": classifier is not None,
+        "device": str(DEVICE),
+    }
 
 # ─────────────────────────────────────────────────────────────
 # RUN
