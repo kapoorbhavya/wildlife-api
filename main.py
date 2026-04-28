@@ -26,6 +26,7 @@ from collections import defaultdict
 from ultralytics import YOLO
 # ── Download models if not present (for Railway deployment) ──
 import os
+import gc
 
 def download_models_if_needed():
     import gdown
@@ -260,13 +261,13 @@ def detect_all_animals(image: Image.Image) -> List[AnimalDetection]:
     print(f"\n  Image: {iw}×{ih}")
     img_np_rgb = np.array(image.convert("RGB"))
 
-    results = get_detector().predict(
+    results = detector.predict(
         img_np_rgb,
         conf=DETECTION_CONF,
         iou=NMS_IOU_THRESH,
-        imgsz=640,      # ← 640 not 1280
+        imgsz=640,        # was 1280
         max_det=MAX_DETECTIONS,
-        augment=False,  # ← False not True
+        augment=False,    # was True
         verbose=False
     )[0]
 
@@ -362,7 +363,7 @@ def detect_all_animals(image: Image.Image) -> List[AnimalDetection]:
     for a in animals:
         sp_counts[a.species] += 1
     print(f"\n  Final: {len(animals)} animals — {dict(sp_counts)}")
-    import gc
+    
     gc.collect()
     return animals
 
@@ -580,29 +581,26 @@ async def analyze_image(file: UploadFile = File(...)):
         img_bytes = await file.read()
         image = Image.open(io.BytesIO(img_bytes)).convert("RGB")
 
-        # ── ADD THIS: resize large images to save RAM ──
-        max_size = 1280
+        # Resize large images to save RAM
         iw, ih = image.size
-        if max(iw, ih) > max_size:
-            scale = max_size / max(iw, ih)
+        if max(iw, ih) > 800:
+            scale = 800 / max(iw, ih)
             image = image.resize(
                 (int(iw * scale), int(ih * scale)),
                 Image.LANCZOS
             )
-            print(f"  Resized: {iw}×{ih} → {image.size[0]}×{image.size[1]}")
-        # ──────────────────────────────────────────────
+            print(f"  Resized: {iw}x{ih} -> {image.size}")
 
-        # Run complete pipeline
+        iw, ih = image.size
+        print(f"  File: {file.filename} ({iw}x{ih})")
+
         animals = detect_all_animals(image)
 
-        # Count species
         sp_count: Dict[str, int] = defaultdict(int)
         for a in animals:
             sp_count[a.species] += 1
 
-        # Draw annotated image
         b64 = draw_detections(image, animals) if animals else ""
-
         elapsed = round(time.time() - start, 3)
 
         return ImageAnalysisResponse(
@@ -620,8 +618,9 @@ async def analyze_image(file: UploadFile = File(...)):
     except HTTPException:
         raise
     except Exception as e:
-        import traceback; traceback.print_exc()
-        raise HTTPException(500, str(e))
+        import traceback
+        traceback.print_exc()   # prints full error to Railway logs
+        raise HTTPException(500, f"Server error: {str(e)}")
 
 
 @app.post("/analyze-video")
