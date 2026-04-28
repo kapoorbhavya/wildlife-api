@@ -258,17 +258,15 @@ def box_iou(a: List[int], b: List[int]) -> float:
 def detect_all_animals(image: Image.Image) -> List[AnimalDetection]:
     iw, ih = image.size
     print(f"\n  Image: {iw}×{ih}")
-
-    # ── Step 1: YOLOv8x Detection ─────────────────────────────
     img_np_rgb = np.array(image.convert("RGB"))
 
-    results = detector.predict(
+    results = get_detector().predict(
         img_np_rgb,
         conf=DETECTION_CONF,
         iou=NMS_IOU_THRESH,
-        imgsz=1280,
+        imgsz=640,      # ← 640 not 1280
         max_det=MAX_DETECTIONS,
-        augment=True,
+        augment=False,  # ← False not True
         verbose=False
     )[0]
 
@@ -364,7 +362,8 @@ def detect_all_animals(image: Image.Image) -> List[AnimalDetection]:
     for a in animals:
         sp_counts[a.species] += 1
     print(f"\n  Final: {len(animals)} animals — {dict(sp_counts)}")
-
+    import gc
+    gc.collect()
     return animals
 
 # ─────────────────────────────────────────────────────────────
@@ -569,15 +568,9 @@ async def get_species(name: str):
     return {"species": name, "data": mig}
 
 
+# Change 2 — resize large images before processing
 @app.post("/analyze-image", response_model=ImageAnalysisResponse)
 async def analyze_image(file: UploadFile = File(...)):
-    """
-    Upload wildlife image → get:
-    - TIGHT bounding boxes around each animal (like car detection)
-    - Species name + confidence for each animal
-    - Full migration data for each species
-    - Base64 annotated image
-    """
     allowed = {"image/jpeg", "image/jpg", "image/png", "image/webp"}
     if file.content_type not in allowed:
         raise HTTPException(400, f"Use JPEG/PNG. Got: {file.content_type}")
@@ -585,15 +578,19 @@ async def analyze_image(file: UploadFile = File(...)):
     try:
         start     = time.time()
         img_bytes = await file.read()
+        image = Image.open(io.BytesIO(img_bytes)).convert("RGB")
 
-        try:
-            image = Image.open(io.BytesIO(img_bytes)).convert("RGB")
-        except Exception:
-            raise HTTPException(400, "Cannot decode image.")
-
+        # ── ADD THIS: resize large images to save RAM ──
+        max_size = 1280
         iw, ih = image.size
-        print(f"\n{'─'*55}")
-        print(f"  File: {file.filename} ({iw}×{ih})")
+        if max(iw, ih) > max_size:
+            scale = max_size / max(iw, ih)
+            image = image.resize(
+                (int(iw * scale), int(ih * scale)),
+                Image.LANCZOS
+            )
+            print(f"  Resized: {iw}×{ih} → {image.size[0]}×{image.size[1]}")
+        # ──────────────────────────────────────────────
 
         # Run complete pipeline
         animals = detect_all_animals(image)
