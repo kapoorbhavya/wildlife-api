@@ -100,12 +100,14 @@ infer_transform = A.Compose([
 # 2. APP SETUP
 # ─────────────────────────────────────────────────────────────
 app = FastAPI(title="Wildlife Migration API", version="11.0.0")
+# Replace your existing CORSMiddleware with this:
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
+    allow_credentials=False,    # ← change True to False (required when origins="*")
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["*"],
 )
 
 # ─────────────────────────────────────────────────────────────
