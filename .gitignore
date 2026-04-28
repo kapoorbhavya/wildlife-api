@@ -1,0 +1,13 @@
+﻿venv/
+.venv/
+models/*.pt
+models/*.pth
+models/*.engine
+models/*.onnx
+__pycache__/
+*.pyc
+*.pyd
+*.jpg
+*.jpeg
+*.png
+debug_yolo_output.jpg

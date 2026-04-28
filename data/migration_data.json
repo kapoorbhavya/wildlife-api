@@ -1,0 +1,926 @@
+{
+  "Asian Elephant": {
+    "common_name": "Asian Elephant",
+    "scientific_name": "Elephas maximus",
+    "conservation_status": "Endangered",
+    "habitat": "Tropical and subtropical forests, grasslands",
+    "diet": "Herbivore \u2014 grasses, bark, roots, leaves",
+    "avg_distance_km": 50,
+    "population_estimate": 40000,
+    "fun_facts": [
+      "Largest land animal in Asia",
+      "Can live up to 60 years",
+      "Uses infrasound to communicate"
+    ],
+    "migration_type": "Seasonal movement",
+    "migration_description": "Move seasonally following food and water sources",
+    "seasonal_positions": {
+      "Jan": {
+        "lat": 20.5,
+        "lng": 85.8,
+        "location": "Odisha, India"
+      },
+      "Feb": {
+        "lat": 20.3,
+        "lng": 85.5,
+        "location": "Odisha, India"
+      },
+      "Mar": {
+        "lat": 19.8,
+        "lng": 85.2,
+        "location": "Eastern Ghats"
+      },
+      "Apr": {
+        "lat": 19.2,
+        "lng": 84.8,
+        "location": "Eastern Ghats"
+      },
+      "May": {
+        "lat": 18.5,
+        "lng": 84.2,
+        "location": "Andhra Pradesh"
+      },
+      "Jun": {
+        "lat": 17.8,
+        "lng": 83.5,
+        "location": "Andhra Pradesh"
+      },
+      "Jul": {
+        "lat": 17.2,
+        "lng": 83.0,
+        "location": "Southern India"
+      },
+      "Aug": {
+        "lat": 17.5,
+        "lng": 83.3,
+        "location": "Southern India"
+      },
+      "Sep": {
+        "lat": 18.2,
+        "lng": 84.0,
+        "location": "Eastern Ghats"
+      },
+      "Oct": {
+        "lat": 19.0,
+        "lng": 84.5,
+        "location": "Eastern Ghats"
+      },
+      "Nov": {
+        "lat": 19.8,
+        "lng": 85.0,
+        "location": "Odisha"
+      },
+      "Dec": {
+        "lat": 20.5,
+        "lng": 85.8,
+        "location": "Odisha, India"
+      }
+    },
+    "migration_route": [
+      {
+        "lat": 20.5,
+        "lng": 85.8,
+        "month": "Jan",
+        "location": "Odisha"
+      },
+      {
+        "lat": 19.2,
+        "lng": 84.8,
+        "month": "Apr",
+        "location": "Eastern Ghats"
+      },
+      {
+        "lat": 17.8,
+        "lng": 83.5,
+        "month": "Jun",
+        "location": "Andhra Pradesh"
+      },
+      {
+        "lat": 17.2,
+        "lng": 83.0,
+        "month": "Jul",
+        "location": "Southern India"
+      },
+      {
+        "lat": 19.0,
+        "lng": 84.5,
+        "month": "Oct",
+        "location": "Eastern Ghats"
+      },
+      {
+        "lat": 20.5,
+        "lng": 85.8,
+        "month": "Dec",
+        "location": "Odisha"
+      }
+    ],
+    "breeding_grounds": {
+      "lat": 20.5,
+      "lng": 85.8,
+      "location": "Odisha, India"
+    },
+    "key_habitats": [
+      "Corbett National Park",
+      "Kaziranga",
+      "Periyar",
+      "Nagarhole"
+    ]
+  },
+  "tigers": {
+    "common_name": "Bengal Tiger",
+    "scientific_name": "Panthera tigris tigris",
+    "conservation_status": "Endangered",
+    "habitat": "Tropical forests, grasslands, mangroves",
+    "diet": "Carnivore \u2014 deer, wild boar, buffalo",
+    "avg_distance_km": 30,
+    "population_estimate": 3900,
+    "fun_facts": [
+      "Strongest cat in the world",
+      "Can leap 6 meters in one jump",
+      "Each tiger has unique stripe pattern"
+    ],
+    "migration_type": "Territory-based movement",
+    "migration_description": "Tigers patrol large territories, moving seasonally with prey",
+    "seasonal_positions": {
+      "Jan": {
+        "lat": 21.5,
+        "lng": 80.5,
+        "location": "Kanha, MP"
+      },
+      "Feb": {
+        "lat": 21.3,
+        "lng": 80.2,
+        "location": "Kanha, MP"
+      },
+      "Mar": {
+        "lat": 21.0,
+        "lng": 79.8,
+        "location": "Pench, MP"
+      },
+      "Apr": {
+        "lat": 20.5,
+        "lng": 79.2,
+        "location": "Tadoba, Maharashtra"
+      },
+      "May": {
+        "lat": 20.0,
+        "lng": 78.8,
+        "location": "Tadoba, Maharashtra"
+      },
+      "Jun": {
+        "lat": 20.3,
+        "lng": 79.2,
+        "location": "Tadoba, Maharashtra"
+      },
+      "Jul": {
+        "lat": 20.8,
+        "lng": 79.8,
+        "location": "Pench, MP"
+      },
+      "Aug": {
+        "lat": 21.0,
+        "lng": 80.0,
+        "location": "Pench, MP"
+      },
+      "Sep": {
+        "lat": 21.2,
+        "lng": 80.2,
+        "location": "Kanha, MP"
+      },
+      "Oct": {
+        "lat": 21.5,
+        "lng": 80.5,
+        "location": "Kanha, MP"
+      },
+      "Nov": {
+        "lat": 21.8,
+        "lng": 80.8,
+        "location": "Kanha, MP"
+      },
+      "Dec": {
+        "lat": 21.5,
+        "lng": 80.5,
+        "location": "Kanha, MP"
+      }
+    },
+    "migration_route": [
+      {
+        "lat": 21.5,
+        "lng": 80.5,
+        "month": "Jan",
+        "location": "Kanha, MP"
+      },
+      {
+        "lat": 21.0,
+        "lng": 79.8,
+        "month": "Mar",
+        "location": "Pench, MP"
+      },
+      {
+        "lat": 20.0,
+        "lng": 78.8,
+        "month": "May",
+        "location": "Tadoba"
+      },
+      {
+        "lat": 21.0,
+        "lng": 80.0,
+        "month": "Aug",
+        "location": "Pench, MP"
+      },
+      {
+        "lat": 21.5,
+        "lng": 80.5,
+        "month": "Dec",
+        "location": "Kanha, MP"
+      }
+    ],
+    "breeding_grounds": {
+      "lat": 21.5,
+      "lng": 80.5,
+      "location": "Kanha National Park"
+    },
+    "key_habitats": [
+      "Kanha",
+      "Ranthambore",
+      "Bandhavgarh",
+      "Sundarbans"
+    ]
+  },
+  "zebra": {
+    "common_name": "Plains Zebra",
+    "scientific_name": "Equus quagga",
+    "conservation_status": "Near Threatened",
+    "habitat": "Grasslands, savannas, woodlands",
+    "diet": "Herbivore \u2014 grasses, leaves, bark",
+    "avg_distance_km": 800,
+    "population_estimate": 500000,
+    "fun_facts": [
+      "Each zebra has unique stripe pattern",
+      "Can run up to 65 km/h",
+      "Travel in large herds for protection"
+    ],
+    "migration_type": "Long-distance migration",
+    "migration_description": "Part of Great Migration in East Africa with wildebeest",
+    "seasonal_positions": {
+      "Jan": {
+        "lat": -3.5,
+        "lng": 35.0,
+        "location": "Serengeti, Tanzania"
+      },
+      "Feb": {
+        "lat": -3.0,
+        "lng": 35.2,
+        "location": "Southern Serengeti"
+      },
+      "Mar": {
+        "lat": -2.5,
+        "lng": 35.5,
+        "location": "Central Serengeti"
+      },
+      "Apr": {
+        "lat": -2.0,
+        "lng": 35.0,
+        "location": "Western Serengeti"
+      },
+      "May": {
+        "lat": -1.5,
+        "lng": 34.5,
+        "location": "Western Corridor"
+      },
+      "Jun": {
+        "lat": -1.0,
+        "lng": 34.0,
+        "location": "Grumeti, Tanzania"
+      },
+      "Jul": {
+        "lat": -1.2,
+        "lng": 35.0,
+        "location": "Northern Serengeti"
+      },
+      "Aug": {
+        "lat": -1.5,
+        "lng": 35.2,
+        "location": "Masai Mara, Kenya"
+      },
+      "Sep": {
+        "lat": -1.5,
+        "lng": 35.2,
+        "location": "Masai Mara, Kenya"
+      },
+      "Oct": {
+        "lat": -2.0,
+        "lng": 35.0,
+        "location": "Northern Serengeti"
+      },
+      "Nov": {
+        "lat": -2.8,
+        "lng": 35.2,
+        "location": "Central Serengeti"
+      },
+      "Dec": {
+        "lat": -3.5,
+        "lng": 35.0,
+        "location": "Southern Serengeti"
+      }
+    },
+    "migration_route": [
+      {
+        "lat": -3.5,
+        "lng": 35.0,
+        "month": "Jan",
+        "location": "Southern Serengeti"
+      },
+      {
+        "lat": -2.0,
+        "lng": 35.0,
+        "month": "Apr",
+        "location": "Western Serengeti"
+      },
+      {
+        "lat": -1.0,
+        "lng": 34.0,
+        "month": "Jun",
+        "location": "Grumeti"
+      },
+      {
+        "lat": -1.5,
+        "lng": 35.2,
+        "month": "Aug",
+        "location": "Masai Mara"
+      },
+      {
+        "lat": -3.5,
+        "lng": 35.0,
+        "month": "Dec",
+        "location": "Southern Serengeti"
+      }
+    ],
+    "breeding_grounds": {
+      "lat": -3.0,
+      "lng": 35.0,
+      "location": "Southern Serengeti"
+    },
+    "key_habitats": [
+      "Serengeti",
+      "Masai Mara",
+      "Amboseli",
+      "Tsavo"
+    ]
+  },
+  "horse": {
+    "common_name": "Wild Horse",
+    "scientific_name": "Equus ferus",
+    "conservation_status": "Vulnerable",
+    "habitat": "Grasslands, steppes, semi-arid areas",
+    "diet": "Herbivore \u2014 grasses, shrubs, bark",
+    "avg_distance_km": 150,
+    "population_estimate": 2000,
+    "fun_facts": [
+      "Can sleep both standing and lying down",
+      "Have nearly 360 degree vision",
+      "Live in family groups called bands"
+    ],
+    "migration_type": "Seasonal grazing movement",
+    "migration_description": "Move seasonally following grass growth and water sources",
+    "seasonal_positions": {
+      "Jan": {
+        "lat": 45.0,
+        "lng": 90.0,
+        "location": "Mongolia Steppes"
+      },
+      "Feb": {
+        "lat": 45.2,
+        "lng": 90.5,
+        "location": "Mongolia Steppes"
+      },
+      "Mar": {
+        "lat": 46.0,
+        "lng": 91.0,
+        "location": "Northern Mongolia"
+      },
+      "Apr": {
+        "lat": 47.0,
+        "lng": 91.5,
+        "location": "Northern Mongolia"
+      },
+      "May": {
+        "lat": 48.0,
+        "lng": 92.0,
+        "location": "Altai Region"
+      },
+      "Jun": {
+        "lat": 49.0,
+        "lng": 92.5,
+        "location": "Altai Region"
+      },
+      "Jul": {
+        "lat": 49.0,
+        "lng": 92.5,
+        "location": "Altai Region"
+      },
+      "Aug": {
+        "lat": 48.0,
+        "lng": 92.0,
+        "location": "Altai Region"
+      },
+      "Sep": {
+        "lat": 47.0,
+        "lng": 91.5,
+        "location": "Northern Mongolia"
+      },
+      "Oct": {
+        "lat": 46.0,
+        "lng": 91.0,
+        "location": "Northern Mongolia"
+      },
+      "Nov": {
+        "lat": 45.5,
+        "lng": 90.5,
+        "location": "Mongolia Steppes"
+      },
+      "Dec": {
+        "lat": 45.0,
+        "lng": 90.0,
+        "location": "Mongolia Steppes"
+      }
+    },
+    "migration_route": [
+      {
+        "lat": 45.0,
+        "lng": 90.0,
+        "month": "Jan",
+        "location": "Mongolia Steppes"
+      },
+      {
+        "lat": 47.0,
+        "lng": 91.5,
+        "month": "Apr",
+        "location": "Northern Mongolia"
+      },
+      {
+        "lat": 49.0,
+        "lng": 92.5,
+        "month": "Jun",
+        "location": "Altai Region"
+      },
+      {
+        "lat": 45.0,
+        "lng": 90.0,
+        "month": "Dec",
+        "location": "Mongolia Steppes"
+      }
+    ],
+    "breeding_grounds": {
+      "lat": 49.0,
+      "lng": 92.5,
+      "location": "Altai Region"
+    },
+    "key_habitats": [
+      "Mongolian Steppes",
+      "Altai Mountains",
+      "Gobi Desert edge"
+    ]
+  },
+  "donkey": {
+    "common_name": "Wild Donkey",
+    "scientific_name": "Equus africanus",
+    "conservation_status": "Critically Endangered",
+    "habitat": "Semi-arid, arid grasslands, shrublands",
+    "diet": "Herbivore \u2014 dry grasses, shrubs, bark",
+    "avg_distance_km": 100,
+    "population_estimate": 600,
+    "fun_facts": [
+      "Can survive with very little water",
+      "Excellent climbers on rough terrain",
+      "Have louder call than horses"
+    ],
+    "migration_type": "Nomadic movement",
+    "migration_description": "Nomadic movement following sparse rainfall and vegetation",
+    "seasonal_positions": {
+      "Jan": {
+        "lat": 11.5,
+        "lng": 41.5,
+        "location": "Ethiopia/Eritrea"
+      },
+      "Feb": {
+        "lat": 11.8,
+        "lng": 42.0,
+        "location": "Ethiopia/Eritrea"
+      },
+      "Mar": {
+        "lat": 12.2,
+        "lng": 42.5,
+        "location": "Afar Region"
+      },
+      "Apr": {
+        "lat": 12.5,
+        "lng": 43.0,
+        "location": "Djibouti Region"
+      },
+      "May": {
+        "lat": 12.8,
+        "lng": 43.5,
+        "location": "Djibouti"
+      },
+      "Jun": {
+        "lat": 12.5,
+        "lng": 43.0,
+        "location": "Djibouti Region"
+      },
+      "Jul": {
+        "lat": 12.0,
+        "lng": 42.5,
+        "location": "Afar Region"
+      },
+      "Aug": {
+        "lat": 11.8,
+        "lng": 42.0,
+        "location": "Ethiopia"
+      },
+      "Sep": {
+        "lat": 11.5,
+        "lng": 41.8,
+        "location": "Ethiopia"
+      },
+      "Oct": {
+        "lat": 11.3,
+        "lng": 41.5,
+        "location": "Ethiopia/Eritrea"
+      },
+      "Nov": {
+        "lat": 11.2,
+        "lng": 41.3,
+        "location": "Ethiopia/Eritrea"
+      },
+      "Dec": {
+        "lat": 11.5,
+        "lng": 41.5,
+        "location": "Ethiopia/Eritrea"
+      }
+    },
+    "migration_route": [
+      {
+        "lat": 11.5,
+        "lng": 41.5,
+        "month": "Jan",
+        "location": "Ethiopia"
+      },
+      {
+        "lat": 12.5,
+        "lng": 43.0,
+        "month": "Apr",
+        "location": "Djibouti"
+      },
+      {
+        "lat": 12.8,
+        "lng": 43.5,
+        "month": "May",
+        "location": "Djibouti"
+      },
+      {
+        "lat": 11.5,
+        "lng": 41.5,
+        "month": "Dec",
+        "location": "Ethiopia"
+      }
+    ],
+    "breeding_grounds": {
+      "lat": 12.0,
+      "lng": 42.5,
+      "location": "Afar Region, Ethiopia"
+    },
+    "key_habitats": [
+      "Afar Triangle",
+      "Ethiopian Highlands",
+      "Eritrean Coast"
+    ]
+  },
+  "Common-Myna": {
+    "common_name": "Common Myna",
+    "scientific_name": "Acridotheres tristis",
+    "conservation_status": "Least Concern",
+    "habitat": "Urban areas, farmland, open woodland",
+    "diet": "Omnivore \u2014 insects, fruits, seeds, scraps",
+    "avg_distance_km": 20,
+    "population_estimate": 100000000,
+    "fun_facts": [
+      "One of world's most invasive species",
+      "Can mimic human speech",
+      "Highly adaptable to urban environments"
+    ],
+    "migration_type": "Resident/Short distance",
+    "migration_description": "Mostly resident, short local movements following food",
+    "seasonal_positions": {
+      "Jan": {
+        "lat": 28.6,
+        "lng": 77.2,
+        "location": "Delhi, India"
+      },
+      "Feb": {
+        "lat": 28.6,
+        "lng": 77.2,
+        "location": "Delhi, India"
+      },
+      "Mar": {
+        "lat": 28.8,
+        "lng": 77.5,
+        "location": "Delhi NCR"
+      },
+      "Apr": {
+        "lat": 29.0,
+        "lng": 77.8,
+        "location": "Haryana"
+      },
+      "May": {
+        "lat": 29.2,
+        "lng": 78.0,
+        "location": "Uttar Pradesh"
+      },
+      "Jun": {
+        "lat": 29.0,
+        "lng": 77.8,
+        "location": "Haryana"
+      },
+      "Jul": {
+        "lat": 28.8,
+        "lng": 77.5,
+        "location": "Delhi NCR"
+      },
+      "Aug": {
+        "lat": 28.6,
+        "lng": 77.2,
+        "location": "Delhi, India"
+      },
+      "Sep": {
+        "lat": 28.5,
+        "lng": 77.0,
+        "location": "Delhi, India"
+      },
+      "Oct": {
+        "lat": 28.5,
+        "lng": 77.0,
+        "location": "Delhi, India"
+      },
+      "Nov": {
+        "lat": 28.6,
+        "lng": 77.2,
+        "location": "Delhi, India"
+      },
+      "Dec": {
+        "lat": 28.6,
+        "lng": 77.2,
+        "location": "Delhi, India"
+      }
+    },
+    "migration_route": [
+      {
+        "lat": 28.6,
+        "lng": 77.2,
+        "month": "Jan",
+        "location": "Delhi"
+      },
+      {
+        "lat": 29.2,
+        "lng": 78.0,
+        "month": "May",
+        "location": "UP"
+      },
+      {
+        "lat": 28.6,
+        "lng": 77.2,
+        "month": "Dec",
+        "location": "Delhi"
+      }
+    ],
+    "breeding_grounds": {
+      "lat": 28.6,
+      "lng": 77.2,
+      "location": "Delhi, India"
+    },
+    "key_habitats": [
+      "Urban India",
+      "Farmlands",
+      "Parks",
+      "Gardens"
+    ]
+  },
+  "House-Crow": {
+    "common_name": "House Crow",
+    "scientific_name": "Corvus splendens",
+    "conservation_status": "Least Concern",
+    "habitat": "Urban areas, coastal towns, farmland",
+    "diet": "Omnivore \u2014 scraps, insects, eggs, small animals",
+    "avg_distance_km": 15,
+    "population_estimate": 50000000,
+    "fun_facts": [
+      "One of most intelligent birds",
+      "Can use tools to get food",
+      "Spread globally via ships"
+    ],
+    "migration_type": "Resident",
+    "migration_description": "Mostly sedentary, small local movements in urban areas",
+    "seasonal_positions": {
+      "Jan": {
+        "lat": 19.0,
+        "lng": 72.8,
+        "location": "Mumbai, India"
+      },
+      "Feb": {
+        "lat": 19.0,
+        "lng": 72.8,
+        "location": "Mumbai, India"
+      },
+      "Mar": {
+        "lat": 19.1,
+        "lng": 72.9,
+        "location": "Mumbai suburbs"
+      },
+      "Apr": {
+        "lat": 19.2,
+        "lng": 73.0,
+        "location": "Thane"
+      },
+      "May": {
+        "lat": 19.2,
+        "lng": 73.0,
+        "location": "Thane"
+      },
+      "Jun": {
+        "lat": 19.1,
+        "lng": 72.9,
+        "location": "Mumbai suburbs"
+      },
+      "Jul": {
+        "lat": 19.0,
+        "lng": 72.8,
+        "location": "Mumbai, India"
+      },
+      "Aug": {
+        "lat": 19.0,
+        "lng": 72.8,
+        "location": "Mumbai, India"
+      },
+      "Sep": {
+        "lat": 19.0,
+        "lng": 72.8,
+        "location": "Mumbai, India"
+      },
+      "Oct": {
+        "lat": 19.0,
+        "lng": 72.8,
+        "location": "Mumbai, India"
+      },
+      "Nov": {
+        "lat": 19.0,
+        "lng": 72.8,
+        "location": "Mumbai, India"
+      },
+      "Dec": {
+        "lat": 19.0,
+        "lng": 72.8,
+        "location": "Mumbai, India"
+      }
+    },
+    "migration_route": [
+      {
+        "lat": 19.0,
+        "lng": 72.8,
+        "month": "Jan",
+        "location": "Mumbai"
+      },
+      {
+        "lat": 19.2,
+        "lng": 73.0,
+        "month": "May",
+        "location": "Thane"
+      },
+      {
+        "lat": 19.0,
+        "lng": 72.8,
+        "month": "Dec",
+        "location": "Mumbai"
+      }
+    ],
+    "breeding_grounds": {
+      "lat": 19.0,
+      "lng": 72.8,
+      "location": "Mumbai, India"
+    },
+    "key_habitats": [
+      "Mumbai",
+      "Chennai",
+      "Kolkata",
+      "Coastal cities"
+    ]
+  },
+  "Indian-Grey-Hornbill": {
+    "common_name": "Indian Grey Hornbill",
+    "scientific_name": "Ocyceros birostris",
+    "conservation_status": "Least Concern",
+    "habitat": "Deciduous forests, urban trees, orchards",
+    "diet": "Omnivore \u2014 fruits, insects, small reptiles",
+    "avg_distance_km": 25,
+    "population_estimate": 10000000,
+    "fun_facts": [
+      "Female seals herself in tree cavity during nesting",
+      "Male feeds female through small hole",
+      "Important seed disperser in forests"
+    ],
+    "migration_type": "Resident/Altitudinal movement",
+    "migration_description": "Mostly resident, some altitudinal movements in winter",
+    "seasonal_positions": {
+      "Jan": {
+        "lat": 23.0,
+        "lng": 77.5,
+        "location": "Central India"
+      },
+      "Feb": {
+        "lat": 23.2,
+        "lng": 77.8,
+        "location": "Central India"
+      },
+      "Mar": {
+        "lat": 23.5,
+        "lng": 78.2,
+        "location": "MP Forests"
+      },
+      "Apr": {
+        "lat": 24.0,
+        "lng": 78.8,
+        "location": "MP Forests"
+      },
+      "May": {
+        "lat": 24.5,
+        "lng": 79.2,
+        "location": "Northern MP"
+      },
+      "Jun": {
+        "lat": 24.0,
+        "lng": 78.8,
+        "location": "MP Forests"
+      },
+      "Jul": {
+        "lat": 23.5,
+        "lng": 78.2,
+        "location": "MP Forests"
+      },
+      "Aug": {
+        "lat": 23.2,
+        "lng": 77.8,
+        "location": "Central India"
+      },
+      "Sep": {
+        "lat": 23.0,
+        "lng": 77.5,
+        "location": "Central India"
+      },
+      "Oct": {
+        "lat": 22.8,
+        "lng": 77.2,
+        "location": "Central India"
+      },
+      "Nov": {
+        "lat": 22.8,
+        "lng": 77.2,
+        "location": "Central India"
+      },
+      "Dec": {
+        "lat": 23.0,
+        "lng": 77.5,
+        "location": "Central India"
+      }
+    },
+    "migration_route": [
+      {
+        "lat": 23.0,
+        "lng": 77.5,
+        "month": "Jan",
+        "location": "Central India"
+      },
+      {
+        "lat": 24.5,
+        "lng": 79.2,
+        "month": "May",
+        "location": "Northern MP"
+      },
+      {
+        "lat": 23.0,
+        "lng": 77.5,
+        "month": "Dec",
+        "location": "Central India"
+      }
+    ],
+    "breeding_grounds": {
+      "lat": 23.5,
+      "lng": 78.2,
+      "location": "MP Forests, India"
+    },
+    "key_habitats": [
+      "MP Forests",
+      "Rajasthan",
+      "Gujarat",
+      "Urban trees"
+    ]
+  }
+}
