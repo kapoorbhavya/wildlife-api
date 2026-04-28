@@ -13,8 +13,7 @@ RUN pip install --no-cache-dir gdown
 
 COPY . .
 
-RUN python download_models.py
-
 EXPOSE 8000
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Download models at startup, then launch API
+CMD ["sh", "-c", "python download_models.py && uvicorn main:app --host 0.0.0.0 --port 8000"]
